@@ -1,0 +1,37 @@
+//Create new client 
+
+mutation{
+  addClient(name: "Tony Shark", email: "ironman@gmail.com", phone: "555-555-5555"){
+    id,
+    name,
+    email,
+    phone
+  }
+}
+
+
+
+mutation{
+  addClient(name: "Peter Parker", email: "spiderman@gmail.com", phone: "987-555-2388"){
+    id,
+    name,
+    email,
+    phone
+  }
+}
+
+mutation{
+  addClient(name: "test", email: "spiderman@gmail.com", phone: "987-555-2388"){
+    id,
+    name,
+    email,
+    phone
+  }
+}
+
+
+mutation{
+  deleleClient(id: "648e08973644d9026426af08"){
+    name
+  }
+}
