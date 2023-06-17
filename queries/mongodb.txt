@@ -35,3 +35,43 @@ mutation{
     name
   }
 }
+
+//Add project
+mutation{
+  addProject(name: "Mobile app", 
+    description: "This is the description2", 
+    status: new,
+  clientId: "648e0711b985002a97e8dbe7"){
+    name,
+    id,
+    description
+  }
+}
+
+//Add another project
+mutation{
+  addProject(name: "eCommerce Website", 
+    description: "This is the description2", 
+    status: progress,
+  clientId: "648e07a5b985002a97e8dbe9"){
+    name,
+    id,
+    description
+  }
+}
+
+//Update a project
+mutation{
+  updateProject(id:"648e357607777e818ed4c344", 
+  name:"Mobile Application",
+  status: completed){
+    name,
+    description,
+    status,
+    client{
+      name,
+      email,
+      phone
+    }
+  }  
+}
