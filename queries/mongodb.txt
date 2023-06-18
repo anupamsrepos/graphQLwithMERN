@@ -31,7 +31,7 @@ mutation{
 
 
 mutation{
-  deleleClient(id: "648e08973644d9026426af08"){
+  deleteClient(id: "648e08973644d9026426af08"){
     name
   }
 }
